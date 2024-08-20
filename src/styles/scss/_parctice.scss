@@ -1,0 +1,98 @@
+.benefitSection-style4 {
+    background-image: url('../img/abacus/parallax.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .img-part {
+        position: relative;
+        .about-main {
+            border: 1px solid #dee2e6;
+            padding: .25rem;
+            border-radius: .25rem;
+            position: relative;
+            z-index: 9;
+        }
+       
+
+        .shape {
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            bottom: 0;
+        }
+        .circle-bg {
+            z-index: 1;
+        }
+    }
+    .about-content {
+        .title {
+            // margin-top: -40px;
+            font-size: 27px;
+            // text-align: center;
+            font-weight: 800;
+        }
+        .sub-title {
+            color: #000000;
+            font-size: 13px;
+            font-weight: 400;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+            line-height: 24px;
+        }
+        .contact-part {
+            li {
+                display: inline-flex;
+                align-items: center;
+                margin: 0 30px 10px 0;
+                float: left;
+                span {
+                    display: block;
+                }
+                .img-part {
+                    float: left;
+                    width: 70px;
+                    height: 70px;
+                    line-height: 60px;
+                    border-radius: 50%;
+                    border: 5px solid #e5e8eb;
+                    text-align: center;
+                    margin-right: 30px;
+                }
+                .desc {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #54647b;
+                    span{
+                        a{
+                            font-size: 24px;
+                            color: $titleColor;
+                        }
+                    }
+                    a {
+                        color: #031a3d;
+                        font-size: 24px;
+                        font-weight: bold;
+                        margin-top: 10px;
+                        display: block;
+                        &:hover {
+                            color: $primaryColor;
+                        }
+                    }
+                }
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+        .book-part {
+            position: absolute;
+            right: 0;
+            bottom: -25px;
+            width: 775px;
+            .single-book {
+                padding: 20px 60px;
+                background: $grayColor;
+                float: left;
+            }
+        }
+    }
+}

@@ -1,79 +1,70 @@
 import React from 'react';
 import { useEffect } from 'react';
-// import Tilty from 'react-tilty';
-// import AOS from 'aos';
-import circle from '@/styles/img/banner/banner-circle.png';
-import dots from '@/styles/img/banner/banner-dots.png';
-import bgImg from '@/styles/img/abacus/fran_bnr.png';
-import { useRouter } from 'next/router';
+import circle from '@/styles/img/abacus/submitform/Page-Image.png';
+import abacusLogo from '@/styles/img/mastermindabacus-logo.png'
+// import { useRouter } from 'next/router';
 import Image from 'next/image';
 import { useInquiry } from '@/context/inquiryContext';
-// import { useLocation } from 'react-router-dom';
-
-const bgStyle = {
-    backgroundImage: `url(${bgImg})`,
-    'background-size': 'cover',
-    'background-position': 'center',
-    'height': '71vh',
-    'display': 'grid',
-    'align-items': 'center',
-    "position": 'reletive',
-}
+import Link from 'next/link';
 
 const Successfully = () => {
 
     const { data } = useInquiry();
     console.log('data ' + data)
-  useEffect(() => {
-      if (data) {
-          // Wait for 3 seconds before redirecting
-          const timer = setTimeout(() => {
-              window.location.replace(data);
-          }, 2000);
 
-          return () => clearTimeout(timer); 
-      }
-  }, [data]);
+    const onclick = () => {
+        if(data){
+            window.location.replace(data);
+        }
+    }
+    useEffect(() => {
+        if (data) {
+            // Wait for 3 seconds before redirecting
+            const timer = setTimeout(() => {
+                window.location.replace(data);
+            }, 2000);
+
+            return () => clearTimeout(timer);
+        }
+    }, [data]);
 
     return (
         <React.Fragment>
             {/* <!-- banner section start --> */}
-            <div id="rs-banner" className="rs-banner style4 " style={bgStyle}>
+            <div id="rs-banner" className="rs-banner submit ">
                 <div className="container relative" >
                     <div className=" text-cneter relative">
-                        <div className="">
-                            <div className="banner-content pb-14">
-                                <div className="desc black-color mb-25 font-bold  "  style={{ marginTop: "-10px", textShadow:"0px 1px 1px #fd6c24" }}>
-                                    THANKS FOR SUBMITTING INQUIRY.<br />
-                                    YOU CAN EXPLORE YOUR DASHBOARD NOW.<br />
-                                    WE&apos;LL CONTACT YOU SOON FOR FURTHER DETAILS
+                        <div className="row">
+                            <div className="col-lg-7 col-12 banner-content pb-14">
+                                <div className="desc black-color mb-25 font-bold  " style={{ marginTop: "-10px" }}>
+                                    <Image
+                                        src={abacusLogo}
+                                        alt='master mind'
+                                        className='mb-60  md-mb-30'
+                                    />
+                                    <h1 className='mb-20'> THANK you !</h1>
+                                    <p> <span className='mb-20'>FOR SUBMITTING INQUIRY</span><br />
+                                        YOU CAN NOW EXPLORE YOUR DASHBOARD .</p>
                                 </div>
                                 {/* <button onClick={click}></button> */}
 
 
-                                {/* <div className="banner-btn z-index-1" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600" style={{ marginTop: "20px" }}>
-                                    <Link  className="readon2 banner-style" to="/abacus-franchise">Back to Home</Link>
-                                </div> */}
+                                <div className="banner-btn z-index-1 "style={{ marginTop: "40px" }}>
+                                    <Link href="#" className="banner-btn2 banner-style text-justify" to="/" onClick={onclick}>Click Here</Link>
+                                </div>
                             </div>
-                            <div className="banner-circle-shape">
+                            <div className=" col-lg-5 col-12 banner-circle-shape">
                                 {/* <Tilty> */}
-                                    <Image
-                                        className="rotateme"
-                                        src={circle}
-                                        alt=""
-                                    />
+                                <Image
+                                    className="float-end"
+                                    src={circle}
+                                    alt="master mind"
+                                />
                                 {/* </Tilty> */}
                             </div>
                         </div>
                     </div>
-                    <div className="banner-dots-shape">
-                        {/* <Tilty> */}
-                            <Image
-                                src={dots}
-                                alt=""
-                            />
-                        {/* </Tilty> */}
-                    </div>
+
                 </div>
             </div>
             {/* <!-- banner section end --> */}

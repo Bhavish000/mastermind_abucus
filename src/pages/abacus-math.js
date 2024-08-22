@@ -22,12 +22,12 @@ const AbacusMath = () => {
 		<meta property="og:description" content="Mastermind Abacus provides Abacus Math Training to boost your child's Mental Math Abilities and academic performance. Enhance skills with our expert guidance. Enroll now!"/>
 	
 					<meta property="og:type" content="article"/>
-		<meta property="og:image" content="https://www.mastermindabacus.com/assets/new/images/mastermindabacus-logo.png"/>
+		<meta property="og:image" content="https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png"/>
 					<meta name="twitter:card" content="summary_large_image"/>
 		<meta name="twitter:site" content="@mastermindabac2"/>
 		<meta name="twitter:title" content="Abacus Math For Kids | Abacus Math Education & Training | Mastermind Abacus"/>
 		<meta name="twitter:description" content="Mastermind Abacus provides Abacus Math Training to boost your child's Mental Math Abilities and academic performance. Enhance skills with our expert guidance. Enroll now!"/>
-					<meta name="twitter:image" content="https://www.mastermindabacus.com/assets/new/images/mastermindabacus-logo.png"/>
+					<meta name="twitter:image" content="https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png"/>
 
 
 

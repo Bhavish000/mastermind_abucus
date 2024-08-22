@@ -26,12 +26,12 @@ const Gallery = () => {
                 <meta property="og:description" content="Glimpses of Mastermind Abacus National & International level competitions." />
 
                 <meta property="og:type" content="article" />
-                <meta property="og:image" content="https://www.mastermindabacus.com/assets/new/images/mastermindabacus-logo.png" />
+                <meta property="og:image" content="https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@mastermindabac2" />
                 <meta name="twitter:title" content="Mastermind Abacus - Image gallery, a pictorial representation" />
                 <meta name="twitter:description" content="Glimpses of Mastermind Abacus National & International level competitions." />
-                <meta name="twitter:image" content="https://www.mastermindabacus.com/assets/new/images/mastermindabacus-logo.png" />
+                <meta name="twitter:image" content="https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png" />
             </Head>
             <Header
                 parentMenu='about'

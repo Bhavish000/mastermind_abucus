@@ -42,7 +42,7 @@ const FooterStyleTwo = (props) => {
         "@context": "https://schema.org",
          "@type": "Organization",
          "name": "Mastermind Abacus",
-         "logo": "https://www.mastermindabacus.com/assets/new/images/mastermindabacus-logo.png",
+         "logo": "https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png",
          "url": "https://www.mastermindabacus.com/",
          "sameAs": [
          "https://www.youtube.com/user/mastermindabacus",

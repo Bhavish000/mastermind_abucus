@@ -22,12 +22,12 @@ const StudentLanding = () => {
                 <meta property="og:description" content="Discover the Best Abacus Online Classes on the world's premier and most innovative live online abacus learning portal. Book a free demo class!" />
 
                 <meta property="og:type" content="article" />
-                <meta property="og:image" content="https://www.mastermindabacus.com/assets/new/images/mastermindabacus-logo.png" />
+                <meta property="og:image" content="https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@mastermindabac2" />
                 <meta name="twitter:title" content="Mastermind Abacus: Online Classes to Boost Math Skills" />
                 <meta name="twitter:description" content="Discover the Best Abacus Online Classes on the world's premier and most innovative live online abacus learning portal. Book a free demo class!" />
-                <meta name="twitter:image" content="https://www.mastermindabacus.com/assets/new/images/mastermindabacus-logo.png"></meta>
+                <meta name="twitter:image" content="https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png"></meta>
             </Head>
             {/* <OffWrap /> */}
             <Navbar />

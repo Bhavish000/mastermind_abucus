@@ -120,11 +120,11 @@ const Franchise_inquiry_form = (props) => {
             try {
                 const response = await axios.get(`https://tt.mastermindschool.co.in/api/post_franchise_inquiry_data?name=${formData.Name}&email_id=${formData.email}&mobile_no=${formData.phoneNumber}&city=${formData.city}&country_id=${formData.countryid}&state_id=${formData.stateId}&remark=${formData.remark}&product_id=${id ? id : '3'}`);
                 const result = response.data
-                console.log('Success data:', result);
+                // console.log('Success data:', result);
                 if (result.status === true) {
                     burst();
                     setTimeout(() => {
-                        window.location.replace('/inquiry_submit_on_franchise_offline');
+                        window.location.replace('/inquiry_submit_on_franchise_offline' );
                     }, 3000);
 
                 } else {

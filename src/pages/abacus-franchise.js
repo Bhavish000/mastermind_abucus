@@ -22,13 +22,13 @@ const Franchise = () => {
 		<meta property="og:description" content="To become a part of the Mastermind Abacus Franchisee Business, inquire now to know the  process details."/>
 	
 		<meta property="og:type" content="article"/>
-		<meta property="og:image" content="https://www.mastermindabacus.com/assets/new/images/mastermindabacus-logo.png"/>
+		<meta property="og:image" content="https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png"/>
 		
 		<meta name="twitter:card" content="summary_large_image"/>
 		<meta name="twitter:site" content="@mastermindabac2"/>
 		<meta name="twitter:title" content="Abacus Franchise | Global Business Opportunity"/>
 		<meta name="twitter:description" content="To become a part of the Mastermind Abacus Franchisee Business, inquire now to know the  process details."/>
-		<meta name="twitter:image" content="https://www.mastermindabacus.com/assets/new/images/mastermindabacus-logo.png"/>
+		<meta name="twitter:image" content="https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png"/>
             </Head>
             <HeaderStyleFour
             parentMenu='home'

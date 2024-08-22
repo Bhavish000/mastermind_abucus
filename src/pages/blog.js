@@ -10,20 +10,20 @@ const Blog = () => {
         <React.Fragment>
             <Head>
                 {/* <link rel="icon" href={favIcon} /> */}
-                <title>Everything About Abacus | Mastermind Blogs</title> 
-				<meta name="keywords" content=""/>
-		<meta name="description" content="Stay connected!  To Mastermind Abacus Blogs for all the latest facts, learning’s, information about Abacus, Mental Math, child development and much more."/>
-		<meta property="og:title" content="Everything About Abacus | Mastermind Blogs"/>
-		<meta property="og:site_name" content="Mastermind Abacus"/>
-		<meta property="og:url" content="https://www.mastermindabacus.com/blog"/>
-		<meta property="og:description" content="Stay connected!  To Mastermind Abacus Blogs for all the latest facts, learning’s, information about Abacus, Mental Math, child development and much more."/>
-		<meta property="og:type" content="article"/>
-		<meta property="og:image" content="https://www.mastermindabacus.com/assets/new/images/mastermindabacus-logo.png"/>
-		<meta name="twitter:card" content="summary_large_image"/>
-		<meta name="twitter:site" content="@mastermindabac2"/>
-		<meta name="twitter:title" content="Everything About Abacus | Mastermind Blogs"/>
-		<meta name="twitter:description" content="Stay connected!  To Mastermind Abacus Blogs for all the latest facts, learning’s, information about Abacus, Mental Math, child development and much more."/>
-		<meta name="twitter:image" content="https://www.mastermindabacus.com/assets/new/images/mastermindabacus-logo.png"/>
+                <title>Everything About Abacus | Mastermind Blogs</title>
+                <meta name="keywords" content="" />
+                <meta name="description" content="Stay connected!  To Mastermind Abacus Blogs for all the latest facts, learning’s, information about Abacus, Mental Math, child development and much more." />
+                <meta property="og:title" content="Everything About Abacus | Mastermind Blogs" />
+                <meta property="og:site_name" content="Mastermind Abacus" />
+                <meta property="og:url" content="https://www.mastermindabacus.com/blog" />
+                <meta property="og:description" content="Stay connected!  To Mastermind Abacus Blogs for all the latest facts, learning’s, information about Abacus, Mental Math, child development and much more." />
+                <meta property="og:type" content="article" />
+                <meta property="og:image" content="https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@mastermindabac2" />
+                <meta name="twitter:title" content="Everything About Abacus | Mastermind Blogs" />
+                <meta name="twitter:description" content="Stay connected!  To Mastermind Abacus Blogs for all the latest facts, learning’s, information about Abacus, Mental Math, child development and much more." />
+                <meta name="twitter:image" content="https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png" />
             </Head>
             {/* <OffWrap /> */}
             <Header
@@ -42,14 +42,14 @@ const Blog = () => {
                 pageTitle="OUR BLOGS - WE RESEARCH, DOCUMENT & SHARE KNOWLEDGE"
                 pageName=""
                 breadcrumbsImg={bannerbg}
-                // <img src="/static/media/2.d3762604.jpg" alt="Breadcrumbs Image"></img>
+            // <img src="/static/media/2.d3762604.jpg" alt="Breadcrumbs Image"></img>
             />
 
 
-            <BlogMain/>
+            <BlogMain />
 
-           
-           <FooterStyleTwo
+
+            <FooterStyleTwo
                 footerTopClass='footer-top no-gap'
             />
 

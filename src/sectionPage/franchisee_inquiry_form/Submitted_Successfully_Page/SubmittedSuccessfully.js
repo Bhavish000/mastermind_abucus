@@ -15,8 +15,6 @@ const bgStyle = {
     // 'z-index' : '-1'
 }
 
-
-
 const Successfully = () => {
 
     return (

@@ -17,12 +17,12 @@ export default function MainPage() {
         <meta property="og:url" content="https://www.mastermindabacus.com/" />
         <meta property="og:description" content="Boost Your Child's Math Skills with Mastermind Abacus. Book A Free Demo Class for A Firsthand Experience." />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://www.mastermindabacus.com/assets/new/images/mastermindabacus-logo.png" />
+        <meta property="og:image" content="https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@mastermindabac2" />
         <meta name="twitter:title" content="Best Abacus Classes & Training : Mastermind Abacus Academy" />
         <meta name="twitter:description" content="Boost Your Child's Math Skills with Mastermind Abacus. Book A Free Demo Class for A Firsthand Experience." />
-        <meta name="twitter:image" content="https://www.mastermindabacus.com/assets/new/images/mastermindabacus-logo.png" />
+        <meta name="twitter:image" content="https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png" />
 
 
 
@@ -85,7 +85,7 @@ Abacus is an ancient calculating instrument that was primarily invented for doin
 		 "@context": "https://schema.org/", 
 		 "@type": "Product", 
 		 "name": "Online Abacus Classes", 
-		 "image": "https://www.mastermindabacus.com/assets/new/images/Learn-Abacus.webp", 
+		 "image": "https://tt.mastermindschool.co.in/ab_images/Learn-Abacus.webp", 
 		 "description": "Covers all topics from Basics to Advanced Abacus calculation techniques", 
 		 "brand": "Mastermind", 
 		 "sku": "https://www.mastermindabacus.com/abacus-online-classes", 
@@ -101,7 +101,7 @@ Abacus is an ancient calculating instrument that was primarily invented for doin
 			  "@context": "https://schema.org", 
 			  "@type": "LocalBusiness", 
 			  "name": "Mastermind Abacus", 
-			  "image": "https://www.mastermindabacus.com/assets/new/images/mastermindabacus-logo.png", 
+			  "image": "https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png", 
 			  "@id": "https://www.mastermindabacus.com/", 
 			  "url": "https://www.mastermindabacus.com/", 
 			  "telephone": "+91 9826251893", 

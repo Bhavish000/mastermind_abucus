@@ -22,7 +22,7 @@ const NearestAbacusClass = ({ data }) => {
         <title>{data.m_title}</title>
         <meta name="keywords" content={data.m_keyword} />
         <meta name='description' content={data.m_description} />
-        <meta property="og:image" content="https://www.mastermindabacus.com/assets/new/images/mastermindabacus-logo.png" />
+        <meta property="og:image" content="https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png" />
       </Head>
       <Navbar />
       <Hero />

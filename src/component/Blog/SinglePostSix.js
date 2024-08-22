@@ -2,7 +2,6 @@
 // import Image from 'next/image';
 import Image from 'next/image';
 import Link from 'next/link';
-// import { Link } from 'react-router-dom';
 
 const SinglePostSix = (props) => {
     const { blogClass, blogImage, blogTitle, blogAuthor, blogPublishedDate, blogCategory, blogDesc, blogButtonClass, blogButtonText ,BlogUrl} = props;
@@ -13,8 +12,8 @@ const SinglePostSix = (props) => {
                     <Image
                         src={blogImage}
                         alt={blogTitle}
-                         width={500}
-                         height={300}
+                        //  width={500}
+                        //  height={300}
                     />
                 </Link>
             </div>

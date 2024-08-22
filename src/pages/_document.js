@@ -1,12 +1,11 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
-
 export default function Document() {
   return (
     <Html lang="en">
       <Head>
-      <link rel="icon" href="https://www.mastermindabacus.com/assets/new/images/favicon.png"  />
-       
+        <link rel="icon" href='https://tt.mastermindschool.co.in/ab_images/favicon.png' />
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
@@ -29,7 +28,7 @@ export default function Document() {
             }, 5000);
           `}
         </Script>
-        
+
         <Script defer
           src="https://www.googletagmanager.com/gtag/js?id=G-ZN1X5CY96X"
           strategy="afterInteractive"
@@ -57,11 +56,11 @@ export default function Document() {
         </noscript>
         <Main />
         <NextScript />
-        
-        
+
+
 
         <Script id="botsonic-loader" strategy="afterInteractive">
-         {`
+          {`
           function loadBotsonic() {
       (function (w, d, s, o, f, js, fjs) {
         w["botsonic_widget"] = o;

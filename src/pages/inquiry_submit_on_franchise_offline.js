@@ -1,7 +1,5 @@
 import Head from 'next/head';
 import React from 'react';
-// import Franchise_Header from '../Franchise_Header';
-// import SubmittedSuccessfully from '@/pages/inquiry_submit_on_domain_offline';
 import FooterBottom from '@/component/layout/Footer/FooterBottom';
 import Franchise_Header from '@/sectionPage/franchisee_inquiry_form/Franchise_Header';
 import Successfully from '@/sectionPage/franchisee_inquiry_form/Submitted_Successfully_Page/SubmittedSuccessfully';

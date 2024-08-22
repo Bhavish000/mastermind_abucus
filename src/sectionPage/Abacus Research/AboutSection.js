@@ -14,7 +14,7 @@ function About() {
 
                             <Image
                                 src={mainImage}
-                                alt="Main Image"
+                                alt="Mastermind Abacus"
                             />
 
                         </div>

@@ -35,7 +35,7 @@ const BlogDetails = (props) => {
             {/* <PostContent /> */}
             <div className="blog-deatails">
                 <div className="bs-img d-flex justify-center">
-                    {BlogDetailData ? <Image src={BlogDetailData.blog_detail.image_url} alt="Post Image"  /> : null}
+                    {BlogDetailData ? <Image src={BlogDetailData.blog_detail.image_url} alt="Post Image" /> : null}
                 </div>
                 <div className='text-center'>
                 </div>

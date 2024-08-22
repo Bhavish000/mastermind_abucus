@@ -26,7 +26,7 @@ const BannerWorkSheet = (props) => {
 
                     <div className="col-lg-5 md-mb-50">
                         <div className="img-part">
-                            <Image className="about-main" src={AboutImage} alt="About Image" />
+                            <Image className="about-main" src={AboutImage} alt="Mastermind Abacus" />
                            </div>
                     </div>
                 </div>

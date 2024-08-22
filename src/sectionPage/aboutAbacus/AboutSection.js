@@ -31,7 +31,7 @@ function AboutSection() {
 
                             <Image
                                 src={mainImage}
-                                alt="Main Image"
+                                alt="Mastermind Abacus"
                                 onClick={openModal}
                             />
                         </div>

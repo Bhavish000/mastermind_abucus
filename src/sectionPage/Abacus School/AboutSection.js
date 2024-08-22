@@ -26,7 +26,7 @@ const About = () => {
                             <Image
                                 className="video-img section-shadow" 
                                 src={AboutImage}
-                                alt="Video Image"
+                                alt="Mastermind Abacus"
                             />
                             {/* <a className="popup-videos" onClick={() => { openModal(); }}>
                                 <i className="fa fa-play" style={{color: "white"}}></i></a> */}

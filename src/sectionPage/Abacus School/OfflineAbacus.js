@@ -52,7 +52,7 @@ function OfflineAbacus() {
                                 <Image
                                 className="rounded"
                                     src={mainImage}
-                                    alt="Main Image"
+                                    alt="Mastermind Abacus"
                                 />
                             
                         </div>

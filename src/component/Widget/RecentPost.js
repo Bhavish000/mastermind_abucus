@@ -17,8 +17,8 @@ const RecentPost = (props) => {
                         <Image
                             src={item.image_url}
                             alt="Masternind Abacus"
-                            width={500}
-                         height={300}
+                        //     width={500}
+                        //  height={300}
                         />
                     </Link>
                 </div>

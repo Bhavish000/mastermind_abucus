@@ -57,7 +57,7 @@ function Testimonial () {
                             authorImage={authImg}
                             Title="Subeesh Kumar"
                             Designation="Gopika KS"
-                            Description="Ever since my daughter started Abacus Classes Online with Mastermind, I find she is more interested in it, mainly because of the math game videos."
+                            Description="My daughter never liked numbers, and it showed in her grades. After just four months with Mastermind Abacus, she has overcome her math fear, and her class performance has improved dramatically."
                             disNum='100'
                         />  
                         <SingleTestimonial
@@ -66,7 +66,7 @@ function Testimonial () {
                             authorImage={authImg2}
                             Title="Masarrat Acharya"
                             Designation="---"
-                            Description="Jahaan's commendable performance in exams these days amazes me. Her confidence now is at par with the best students of her class. Amazing is the only word that I can say and I can give all credit for this to Mastermind Abacus."
+                            Description="The structured approach at Mastermind Abacus has turned my son into a confident learner. His math skills have improved significantly, and he’s now more motivated than ever."
                             disNum='80'
                         />
                         <SingleTestimonial
@@ -75,10 +75,7 @@ function Testimonial () {
                             authorImage={authImg3}
                             Title="Hetal Ben Soni"
                             Designation="---"
-                            Description="My daughter is an above average scoring student, but her casual attitude is an issue. My friend suggested me to enroll her in Abacus Classes.
-                           I found Mastermind Abacus Classes near me. A visible change can now be seen in her. 
-                           She started improving in all ways, not just in Math but also in other subjects & grasping concepts etc.
-                           She is even comfortable with the online Abacus classes."
+                            Description="I always wanted my son to excel in mathematics. Thanks to Mastermind Abacus, Rudra not only improved but also won the School Mathematics Olympiad trophy this year."
                            disNum='100'
                         />
                         <SingleTestimonial
@@ -87,8 +84,7 @@ function Testimonial () {
                             authorImage={authImg4}
                             Title="Mittal Chavda"
                             Designation="---"
-                            Description="I went to UCMAS and ALOHA center but got my child's admission done at Mastermind Abacus.
-                           The results are fabulous! I am happy with his improvement after the course. He overcame his math phobia."
+                            Description="My son’s enthusiasm for learning has soared since starting Mastermind Abacus. The structured lessons and interactive activities have made a noticeable difference in his academic performance."
                            disNum='90'
                         />
                         <SingleTestimonial
@@ -97,9 +93,7 @@ function Testimonial () {
                             authorImage={authImg5}
                             Title="Ujjawal Swaroop"
                             Designation="---"
-                            Description="My child Aadi enrolled in Mastermind Abacus in the year 2015. Just not mental math skills but undergoing the program has 
-                           improved his concentration and observation skills too and to a great 
-                           extent has enhanced his overall academic performance and personality. Thanks, Team Mastermind Abacus."
+                            Description="Jahaan's recent exam performance has been extraordinary. Her newfound confidence is on par with the top students in her class. All credit goes to Mastermind Abacus for this transformation."
                            disNum='100'
                         />
                         <SingleTestimonial
@@ -108,8 +102,7 @@ function Testimonial () {
                             authorImage={authImg6}
                             Title="Mona Vibhute"
                             Designation="---"
-                            Description="I am a Math Teacher, but surprised to see my daughter's Mathematical Calculations. 
-                           I must admit she calculates faster than me. This has been possible with training from Mastermind Abacus."
+                            Description="My daughter was an average scorer, but her casual attitude was a concern. After enrolling her in Mastermind Abacus, she has shown remarkable improvement, not just in math but across all subjects. She is thriving even in online classes."
                            disNum='100'
                         />
                         <SingleTestimonial
@@ -118,7 +111,7 @@ function Testimonial () {
                             authorImage={authImg7}
                             Title="Kenny Suresh Bhansari"
                             Designation="---"
-                            Description="My daughter never liked numbers and this always reflected in her school report card. But after taking admission in Mastermind Abacus, she overcame her Math fear in just 4 months and her performance in her class has improved dramatically."
+                            Description="After considering other centers, I chose Mastermind Abacus for my child, and the results have been amazing. My child has overcome his math phobia and is now excelling.."
                             disNum='90'
                         />
                         <SingleTestimonial
@@ -127,7 +120,7 @@ function Testimonial () {
                             authorImage={authImg8}
                             Title="Harsha Joshi"
                             Designation="---"
-                            Description="Due to Covid, I had to shift my son from regular to Online Abacus classes. I observed, he is learning well from home too."
+                            Description="Aadi has been with Mastermind Abacus since 2023. The program has not only improved his mental math skills but has also significantly enhanced his concentration, observation, and overall academic performance."
                             disNum='100'
                         />
                         <SingleTestimonial
@@ -136,7 +129,7 @@ function Testimonial () {
                             authorImage={authImg9}
                             Title="MUKESH KUMAR/REKHA"
                             Designation="---"
-                            Description="I always wanted my son to do better in Mathematics. With the help of Mastermind Abacus, I can see Rudra doing wonders. This time he got School Mathematics Olympiad trophy too."
+                            Description="As a math teacher, I was surprised to see my daughter's rapid calculation skills surpass mine, thanks to Mastermind Abacus."
                             disNum='100'
                         />
                     </Slider>

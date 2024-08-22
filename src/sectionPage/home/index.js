@@ -21,12 +21,12 @@ export default function Home() {
                 <meta property="og:url" content="https://www.mastermindabacus.com/" />
                 <meta property="og:description" content="Boost Your Child's Math Skills with Mastermind Abacus. Book A Free Demo Class for A Firsthand Experience." />
                 <meta property="og:type" content="article" />
-                <meta property="og:image" content="https://www.mastermindabacus.com/assets/new/images/mastermindabacus-logo.png" />
+                <meta property="og:image" content="https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@mastermindabac2" />
                 <meta name="twitter:title" content="Best Abacus Classes & Training : Mastermind Abacus Academy" />
                 <meta name="twitter:description" content="Boost Your Child's Math Skills with Mastermind Abacus. Book A Free Demo Class for A Firsthand Experience." />
-                <meta name="twitter:image" content="https://www.mastermindabacus.com/assets/new/images/mastermindabacus-logo.png" />
+                <meta name="twitter:image" content="https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png" />
             
       </Head>
      <Header

@@ -51,8 +51,8 @@ export default function Header(props) {
                                     <div className="logo-cat-wrap hidden-md">
                                         <div className="logo-part pr-90">
                                             <Link href="/">
-                                                <Image className="normal-logo" src={headerNormalLogo ? abacusLogo : abacusLogo} alt="" />
-                                                <Image className="sticky-logo" src={headerStickyLogo ? abacusLogo : abacusLogo} alt="" />
+                                                <Image className="normal-logo" src={headerNormalLogo ? abacusLogo : abacusLogo} alt="master mind" />
+                                                <Image className="sticky-logo" src={headerStickyLogo ? abacusLogo : abacusLogo} alt="master mind" />
                                             </Link>
                                         </div>
 
@@ -63,7 +63,7 @@ export default function Header(props) {
                                         <div className="main-menu">
                                             <div className="mobile-menu md-display-block">
                                                 <Link href="/" className="mobile-normal-logo">
-                                                    <Image className="normal-logo" width={110} src={mobileNormalLogo ? abacusLogo : abacusLogo} alt="" />
+                                                    <Image className="normal-logo" width={110} src={mobileNormalLogo ? abacusLogo : abacusLogo} alt="master mind" />
                                                 </Link>
                                                 <Link href="/" className="mobile-sticky-logo">
                                                     <Image src={abacusLogo} width={110} alt="logo" />

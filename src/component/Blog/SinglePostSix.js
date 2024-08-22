@@ -43,7 +43,7 @@ const SinglePostSix = (props) => {
                 </div>
                 <div className={blogButtonClass ? blogButtonClass : 'blog-button'}>
                     <Link href={`/blog_detail/${BlogUrl}`}  className="blog-btn">
-                        {blogButtonText ? blogButtonText : 'Continue Reading'}
+                        {blogButtonText ? blogButtonText : 'Continue Reading...'}
                     </Link>
                 </div>
             </div>

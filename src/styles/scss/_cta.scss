@@ -190,7 +190,12 @@
         .partition-bg-wrap{
             background: none !important;
             position: relative;
-            padding: 130px 0;
+            padding: 150px 0;
+            .left-franch{
+                position: relative;
+                left: 200px;
+                top: 50px;
+            }
             &:after,
             &:before {
                 position: absolute;
@@ -201,7 +206,7 @@
                 z-index: -1;
             }
             &:after {
-                background:url(../img/cta/home1.jpg);
+                background:url(../img/abacus/Franchise/FRANCHISE-BANNER.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -398,12 +403,19 @@
     //     display: none;
     // } 
     .rs-cta.main-home .partition-bg-wrap {
-        padding: 50px 0;
+        padding: 150px 0;
+    }
+
+    .rs-cta.main-home .partition-bg-wrap .left-franch{
+        top: 0px;
     }
     .rs-cta.main-home .partition-bg-wrap::after {
-        display: none;
+        // display: none;
+        width: 100%;
     }
     .rs-cta.main-home .partition-bg-wrap::before {
+        background-image: none;
+        display: none;
         width: 100%;
     }
     // .rs-cta.style7 .partition-bg-wrap::before {

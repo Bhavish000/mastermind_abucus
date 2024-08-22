@@ -1211,6 +1211,22 @@
       }
     }
   }
+
+  &.grayline {
+    display: none;
+    background-color: gray;
+    padding: 20px 10px;
+    .about-content {
+      text-align: center;
+      .sub-title {
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: capitalize;
+        // margin-bottom: 20px;
+      }
+    }
+  }
   // &.style6 {
   //   .desc {
   //     font-size: 16px;
@@ -1495,6 +1511,11 @@
 
 /* Tablet desktop :991px. */
 @media #{$md} {
+
+  .rs-about.grayline {
+    display: block;
+    font-size: 18px;
+  }
   // .rs-about.style10 .shape-icons .shape.one {
   //   display: none;
   // }
@@ -1640,6 +1661,9 @@
   .rs-about.redline .about-content .sub-title {
     font-size: 18px;
   }
+
+  
+
 
   .rs-about.video-style-school .about-content {
     padding: 70px 40px 20px 40px;

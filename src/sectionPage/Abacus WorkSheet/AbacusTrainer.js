@@ -54,7 +54,7 @@ function AbacusTrainer() {
                             
                                 <Image
                                     src={mainImage}
-                                    alt="Main Image"
+                                    alt="Mastermind Abacus"
                                 />
                             
                         </div>

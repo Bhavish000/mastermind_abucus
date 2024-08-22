@@ -25,7 +25,7 @@ function AbacusParent() {
                            
                                 <Image
                                     src={mainImage2}
-                                    alt="Main Image"
+                                    alt="Mastermind Abacus"
                                 />
                           
                         </div>

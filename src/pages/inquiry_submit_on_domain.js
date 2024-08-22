@@ -26,17 +26,17 @@ const Submitted = () => {
         }
     }, [data]);
 
-    if(!data){
-        return(
-            <div style={{backgroundColor:'#fff'}}></div>
-        )
-    }
+    // if(!data){
+    //     return(
+    //         <div style={{backgroundColor:'#fff'}}></div>
+    //     )
+    // }
     return (
         <React.Fragment>
             <Head>
             <title>Abacus Student | Mastermind Abacus</title>
             </Head>
-            <Franchise_Header
+            {/* <Franchise_Header
                 parentMenu='home'
                 TopBar='enable'
                 // CanvasClass='right_menu_togle hidden-md'
@@ -44,7 +44,7 @@ const Submitted = () => {
                 TopBarClass='topbar-area dark-parimary-bg'
                 emailAddress='support@website.com'
                 phoneNumber='(+088) 589-8745'
-            />
+            /> */}
             <Successfully click={onclick}/>
             <FooterBottom />
             {/* <SearchModal /> */}

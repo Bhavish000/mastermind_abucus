@@ -27,7 +27,7 @@ const BannerAbout = () => {
                         </div>
                         <div className="col-lg-6 col-md-12">
                             <div className="banner-img">
-                                <Image src={bannerImg} alt="Banner Image" />
+                                <Image src={bannerImg} alt="Mastermind Abacus" />
                             </div>
                         </div>
 

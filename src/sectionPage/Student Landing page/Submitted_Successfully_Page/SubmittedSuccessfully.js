@@ -17,10 +17,10 @@ const Successfully = ({click}) => {
                                 <div className="desc black-color mb-25 font-bold  " style={{ marginTop: "-10px" }}>
                                     <Image
                                         src={abacusLogo}
-                                        alt='master mind'
+                                        alt="Mastermind Abacus"
                                         className='mb-60  md-mb-30'
                                     />
-                                    <h1 className='mb-20'> THANK you !</h1>
+                                    <h1 className='mb-20'style={{fontWeight:'900',fontSize:'63px'}}> THANK YOU !</h1>
                                     <p> <span className='mb-20'>FOR SUBMITTING INQUIRY</span><br />
                                         YOU CAN NOW EXPLORE YOUR DASHBOARD .</p>
                                 </div>
@@ -36,7 +36,7 @@ const Successfully = ({click}) => {
                                 <Image
                                     className="float-end"
                                     src={circle}
-                                    alt="master mind"
+                                    alt="Mastermind Abacus"
                                 />
                                 {/* </Tilty> */}
                             </div>

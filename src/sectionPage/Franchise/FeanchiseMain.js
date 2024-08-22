@@ -12,6 +12,7 @@ import MapSection from '../home/MapSection';
 import MapBottom from './MapBottom';
 import BannerStyleFour from '@/component/banner/BannerStyleFour';
 import FaqSection from './FaqSection';
+import RredLineSection from './redLineSection';
 
 const FrnachiseMain = () => {
 	return (
@@ -24,7 +25,7 @@ const FrnachiseMain = () => {
 			{/* About-Start */}
 			<AboutFanrchise />
 			{/* About-End */}
-
+              <RredLineSection/>
 			<FranchiseVideo />
 
 			{/* About-Work-Start */}

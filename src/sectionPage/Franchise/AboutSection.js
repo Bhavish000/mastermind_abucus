@@ -4,7 +4,7 @@ const AboutFanrchise = () => {
 
 
     return (
-        <div id="rs-cta" className='rs-cta bottomBannner' >
+        <div id="rs-cta" className='rs-cta bottomBannner '  >
             <div className="cta-content text-center">
 
                 <div className="sec-title md-mb-10">

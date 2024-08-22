@@ -22,7 +22,7 @@ function About() {
                                 <Image
                                 className="popup-videos"
                                     src={mainImage}
-                                    alt="Main Image"
+                                    alt="Mastermind Abacus"
                                     onClick={openModal}
                                 />
                                 {/* <img

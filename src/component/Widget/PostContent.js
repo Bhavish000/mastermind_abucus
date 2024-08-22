@@ -45,8 +45,7 @@ const PostContent = ({ }) => {
     return (
         <div className="blog-deatails">
             <div className="bs-img">
-                {Blog_detailData ? <Image src={Blog_detailData.blog_detail.image_url} alt="Post Image" width={500}
-                         height={300} /> : null}
+                {Blog_detailData ? <Image src={Blog_detailData.blog_detail.image_url} alt="Post Image"  /> : null}
             </div>
             {Blog_detailData ? <h2 className="title mb-0 mt-20">{Blog_detailData.blog_detail.subject}</h2> : null}
             <div className="blog-full mt-0">

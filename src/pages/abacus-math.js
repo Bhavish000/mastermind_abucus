@@ -6,33 +6,31 @@ import Script from 'next/script';
 import React from 'react';
 
 const AbacusMath = () => {
-    return (
-        <React.Fragment>
-            <Head>
-                {/* <link rel="icon" href={favIcon} /> */}
-                <title>Abacus Math For Kids | Abacus Math Education & Training | Mastermind Abacus</title> 
-				<meta name="keywords" content="abacus math"/>
-		<meta name="description" content="Mastermind Abacus provides Abacus Math Training to boost your child's Mental Math Abilities and academic performance. Enhance skills with our expert guidance. Enroll now!"/>
-		
-		
-		
-		<meta property="og:title" content="Abacus Math For Kids | Abacus Math Education & Training | Mastermind Abacus"/>
-		<meta property="og:site_name" content="Mastermind Abacus"/>
-		<meta property="og:url" content="https://www.mastermindabacus.com/abacus-math"/>
-		<meta property="og:description" content="Mastermind Abacus provides Abacus Math Training to boost your child's Mental Math Abilities and academic performance. Enhance skills with our expert guidance. Enroll now!"/>
-	
-					<meta property="og:type" content="article"/>
-		<meta property="og:image" content="https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png"/>
-					<meta name="twitter:card" content="summary_large_image"/>
-		<meta name="twitter:site" content="@mastermindabac2"/>
-		<meta name="twitter:title" content="Abacus Math For Kids | Abacus Math Education & Training | Mastermind Abacus"/>
-		<meta name="twitter:description" content="Mastermind Abacus provides Abacus Math Training to boost your child's Mental Math Abilities and academic performance. Enhance skills with our expert guidance. Enroll now!"/>
-					<meta name="twitter:image" content="https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png"/>
+  return (
+    <React.Fragment>
+      <Head>
+        {/* <link rel="icon" href={favIcon} /> */}
+        <title>Abacus Math For Kids | Abacus Math Education & Training | Mastermind Abacus</title>
+        <meta name="keywords" content="abacus math" />
+        <meta name="description" content="Mastermind Abacus provides Abacus Math Training to boost your child's Mental Math Abilities and academic performance. Enhance skills with our expert guidance. Enroll now!" />
+
+        <meta property="og:title" content="Abacus Math For Kids | Abacus Math Education & Training | Mastermind Abacus" />
+        <meta property="og:site_name" content="Mastermind Abacus" />
+        <meta property="og:url" content="https://www.mastermindabacus.com/abacus-math" />
+        <meta property="og:description" content="Mastermind Abacus provides Abacus Math Training to boost your child's Mental Math Abilities and academic performance. Enhance skills with our expert guidance. Enroll now!" />
+
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@mastermindabac2" />
+        <meta name="twitter:title" content="Abacus Math For Kids | Abacus Math Education & Training | Mastermind Abacus" />
+        <meta name="twitter:description" content="Mastermind Abacus provides Abacus Math Training to boost your child's Mental Math Abilities and academic performance. Enhance skills with our expert guidance. Enroll now!" />
+        <meta name="twitter:image" content="https://tt.mastermindschool.co.in/ab_images/mastermindabacus-logo.png" />
 
 
 
 
-          <script defer id="schema" type="application/ld+json" dangerouslySetInnerHTML={{
+        <script defer id="schema" type="application/ld+json" dangerouslySetInnerHTML={{
           __html: `
   "@context": "https://schema.org",
   "@type": "VideoObject",
@@ -48,31 +46,31 @@ const AbacusMath = () => {
     "startOffset-input": "required name=seek_to_second_number"
   }
 `}} />
-            </Head>
-           
-           
-            <Header
-            parentMenu='resources'
-            TopBar='enable'
-            // headerNormalLogo={Logo}
-            // headerStickyLogo={stickyLogo}
-            // CanvasLogo={Logo}
-            CanvasClass='right_menu_togle hidden-md'
-            headerClass='full-width-header header-style2'
-            TopBarClass='topbar-area dark-parimary-bg'
-            emailAddress='support@website.com'
-            phoneNumber='(+088) 589-8745'
-            />
-            <AbacusMathMain />
-            <FooterStyleTwo />
-            {/* <SearchModal /> */}
+      </Head>
 
-         
+
+      <Header
+        parentMenu='resources'
+        TopBar='enable'
+        // headerNormalLogo={Logo}
+        // headerStickyLogo={stickyLogo}
+        // CanvasLogo={Logo}
+        CanvasClass='right_menu_togle hidden-md'
+        headerClass='full-width-header header-style2'
+        TopBarClass='topbar-area dark-parimary-bg'
+        emailAddress='support@website.com'
+        phoneNumber='(+088) 589-8745'
+      />
+      <AbacusMathMain />
+      <FooterStyleTwo />
+      {/* <SearchModal /> */}
 
 
 
-        </React.Fragment>
-    );
+
+
+    </React.Fragment>
+  );
 }
 
 

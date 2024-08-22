@@ -38,7 +38,7 @@ function HistorySection() {
                         <div className="img-part popup-videos">
                             <Image
                                 src={mainImage}
-                                alt="Main Image"
+                                alt="Mastermind Abacus"
                                 onClick={openModal2}
                             />
                         </div>

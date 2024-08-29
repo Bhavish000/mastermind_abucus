@@ -13,14 +13,14 @@ function AboutWork() {
             <div className="container">
 
                 <SectionTitle
-                    sectionClass="sec-title text-center mb-50 md-mb-30"
+                    sectionClass="sec-title text-center mb-40 md-mb-30"
                     // bottomSubTitleClass="sub-title mb-0"
                     // bottomSubTitle="The Abacus course structure at Mastermind is user-friendly and engaging, featuring fun Math Games that captivate children. This consistent structure applies to both our online and offline classes at the abacus learning center."
                     titleClass="title family mb-10"
                     title={<>AN ABACUS FRANCHISE OPPORTUNITY WITH <br /> &apos;<span className="title-change" >THREE DIMENSIONAL EARNINGS</span>&apos; </>}
                 />
-                <div className="row align-items-center section-shadow back-color slick-slide " >
-                <div className="col-lg-6 pr-30 md-pr-10 image-sec   md-mb-20" >
+                <div className="row align-items-center section-shadow back-color slick-slide mb-30" >
+                <div className="col-lg-6 pr-30 md-pr-10 image-sec" >
                         <div className="img-part ">
 
                             <Image

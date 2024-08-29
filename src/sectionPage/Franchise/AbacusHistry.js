@@ -34,7 +34,7 @@ const AbacusHistroy = () => {
     ];
 
     return (
-        <div id="rs-about" className="rs-about style3 pt-100 pb-100 md-pt-30 md-pb-30">
+        <div id="rs-about" className="rs-about style3  pb-100 md-pt-30 md-pb-30">
             <div className="container">
                 <div className="">
                     <div className="">

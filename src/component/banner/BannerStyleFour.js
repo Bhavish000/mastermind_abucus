@@ -38,7 +38,7 @@ const BannerStyleFour = () => {
                 <div>
                 <div style={videoContainerStyle}>
                     <video  muted loop id="myVideo" style={videoStyle}  autoPlay={true}>
-                    <source src="https://www.mastermindabacus.com/assets/new/images/video/Abacus.mp4" type="video/mp4" /> </video>
+                    <source src="../../styles/img/abacus/Franchise/Abacus.mp4" type="video/mp4" /> </video>
                     <div style={overlayStyle}></div>
                 </div>
                 </div>

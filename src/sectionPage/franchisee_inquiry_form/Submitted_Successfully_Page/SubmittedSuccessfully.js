@@ -25,7 +25,7 @@ const Successfully = () => {
                     <div className="row relative">
                         <div className="col-lg-6">
                             <div className="banner-content pb-14">
-                                <div className="desc black-color mb-25 fs-4 text-shadow"  style={{ marginTop: "-10px" }}>
+                                <div className="desc black-color mb-25 fs-4"  style={{ marginTop: "-10px" }}>
                                    Your Inquiry Has Been Submitted Successfully. <br />
                                     Please Check Your Registered Email Id And WhatsApp Number For Our Mail And
                                     Message With Information Regarding The Mastermind Abacus Program.

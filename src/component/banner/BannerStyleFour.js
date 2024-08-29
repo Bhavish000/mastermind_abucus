@@ -2,7 +2,6 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import { HomeModal } from '../Common/Modal/HomeModal';
 
-
 const BannerStyleFour = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -38,7 +37,7 @@ const BannerStyleFour = () => {
                 <div>
                 <div style={videoContainerStyle}>
                     <video  muted loop id="myVideo" style={videoStyle}  autoPlay={true}>
-                    <source src="../../styles/img/abacus/Franchise/Abacus.mp4" type="video/mp4" /> </video>
+                    <source src='https://talkright.in/mmvideo/fra_Video.mp4' type="video/mp4" /> </video>
                     <div style={overlayStyle}></div>
                 </div>
                 </div>

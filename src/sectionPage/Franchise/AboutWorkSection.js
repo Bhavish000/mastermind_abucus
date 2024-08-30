@@ -20,7 +20,7 @@ function AboutWork() {
                     title={<>AN ABACUS FRANCHISE OPPORTUNITY WITH <br /> &apos;<span className="title-change" >THREE DIMENSIONAL EARNINGS</span>&apos; </>}
                 />
                 <div className="row align-items-center section-shadow back-color slick-slide mb-30" >
-                <div className="col-lg-6 pr-30 md-pr-10 image-sec" >
+                    <div className="col-lg-6 pr-30 md-pr-10 image-sec" >
                         <div className="img-part ">
 
                             <Image
@@ -44,22 +44,22 @@ function AboutWork() {
                         // animateDuration="100"
                         />
                     </div>
-                  
+
                 </div>
+               
+
                 <div className="row align-items-center" style={{ boxShadow: "0px 0px 1px gray", padding: "20px", marginBlock: "30px", backgroundColor: "#F9F8F8" }}>
-
-                    <div className="col-lg-6 pr-30 md-pr-10 image-sec md-mb-20 order-2 order-md-1">
+                    
+                    <div className="col-lg-6 pr-30 md-pr-10 image-sec md-mb-20 ">
                         <div className="img-part">
-
-                            <Image
+                        <Image
                                 src={image3}
                                 alt="Main Image"
                             />
-
                         </div>
                     </div>
 
-                    <div className="col-lg-6 ">
+                    <div className="col-lg-6 order-last" >
                         {/* Section Title Start */}
                         <SectionTitle
                             sectionClass="sec-title mb-6"
@@ -74,12 +74,14 @@ function AboutWork() {
                         />
                     </div>
 
-
                 </div>
+
+
+
+
                 <div className="row align-items-center" style={{ boxShadow: "0px 0px 1px gray", padding: "20px", marginBlock: "30px", backgroundColor: "#F9F8F8" }}>
 
-
-                <div className="col-lg-6 pr-30 md-pr-10 image-sec md-mb-20 ">
+                    <div className="col-lg-6 pr-30 md-pr-10 image-sec md-mb-20 ">
                         <div className="img-part">
 
                             <Image
@@ -104,7 +106,7 @@ function AboutWork() {
                         // animateDuration="500"
                         />
                     </div>
-                   
+
                 </div>
 
             </div>

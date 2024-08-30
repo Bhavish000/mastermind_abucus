@@ -36,7 +36,7 @@ const HeaderStyleFour = (props) => {
 						TopBar ? <FranchiseTopBar topBarClass={TopBarClass} emailAddress={emailAddress} phoneNumber={phoneNumber} Location={Location} /> : ""
 					}
 
-					<div className={isVisible ? 'menu-area menu-sticky sticky' : 'menu-area menu-sticky'}>
+					<div className={isVisible ? 'menu-area menu-sticky sticky' : 'menu-area menu-sticky'} style={{paddingTop:'6px',paddingBottom:'6px'}}>
 						<div className={headerFullWidth ? 'container-fluid' : 'container'}>
 							<div className="row y-middle">
 								<div className="col-lg-2">

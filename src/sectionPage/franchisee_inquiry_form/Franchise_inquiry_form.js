@@ -18,6 +18,7 @@ const Franchise_inquiry_form = (props) => {
     const [state_list, setstate_list] = useState();
     const [selectedCountry, setSelectedCountry] = useState('');
     const [defaultVal, setdefaultVal] = useState('')
+    const [disable, setdisable] = useState(false)
 
     // const location = useLocation();
     // const { state } = location;
@@ -72,7 +73,6 @@ const Franchise_inquiry_form = (props) => {
     };
     let valueSelect = ''
     if (selectedCountry) {
-        console.log('dddd')
         valueSelect = { value: selectedCountry.id, label: selectedCountry.countryname };
         get_state_listData(valueSelect)
         setdefaultVal(valueSelect)
@@ -105,7 +105,6 @@ const Franchise_inquiry_form = (props) => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-
         const formData = {
             countryid: value,
             stateId: value2,
@@ -115,23 +114,25 @@ const Franchise_inquiry_form = (props) => {
             city: event.target.city.value,
             remark: event.target.remark.value
         };
-        // console.log(formData)
-        if (Captcha) {
+        console.log(formData)
+        if (!Captcha) {
             try {
+                setdisable(true)
                 const response = await axios.get(`https://tt.mastermindschool.co.in/api/post_franchise_inquiry_data?name=${formData.Name}&email_id=${formData.email}&mobile_no=${formData.phoneNumber}&city=${formData.city}&country_id=${formData.countryid}&state_id=${formData.stateId}&remark=${formData.remark}&product_id=${id ? id : '3'}`);
                 const result = response.data
-                // console.log('Success data:', result);
+                console.log('Success data:', result);
                 if (result.status === true) {
                     burst();
-                    setTimeout(() => {
-                        window.location.replace('/inquiry_submit_on_franchise_offline' );
-                    }, 3000);
-
+                    window.location.replace('/inquiry_submit_on_franchise_offline');
+                    setdisable(false) 
                 } else {
                     console.error('Error:', response.statusText);
                 }
             } catch (error) {
                 console.error('Error:', error);
+                setdisable(false)
+            }finally{
+                setdisable(false)
             }
         } else {
             setCaptchaerror(true);
@@ -141,15 +142,15 @@ const Franchise_inquiry_form = (props) => {
 
     useEffect(() => {
         getIP();
-    },[]);
+    }, []);
     return (
         <>
             <div className='flex items-center justify-center'>
                 {isExploding && <ConfettiExplosion force={0.8} duration={3000} particleCount={400} width={1600} />}
             </div>
             <div className="rounded-2xl border-[0.4px] md:px-6 p-4 md:py-5 border-orange-500 shadow-2xl bg-white">
-            <div className='float-end'>
-                <i onClick={onClose} class="fa-solid fa-xmark"></i>
+                <div className='float-end'>
+                    <i onClick={onClose} class="fa-solid fa-xmark"></i>
                 </div>
                 <div className="text-xl py-2 font-bold">{message ? message : 'FRANCHISE INQUIRY'} </div>
                 <form
@@ -178,7 +179,7 @@ const Franchise_inquiry_form = (props) => {
                     />
                     {Captchaerror ? <span style={{ color: 'red' }}>Please Select Captcha</span> : null}
                     <span className="text-sm text-gray-500 pt-1">By registering here, I agree to Mastermind Abacus <a className='text-blue-600' href='https://www.mastermindabacus.com/terms?_gl=1*y57x04*_up*MQ..'>Terms & Conditions</a> and <a className='text-blue-600 ' href='https://www.mastermindabacus.com/privacy-policy?_gl=1*16oj2r1*_up*MQ..'>Privacy Policy</a></span>
-                    <button className="btns btn-anim bg-orange-600 hover:bg-red hover:text-black border-[1px] hover:border-orange-600 rounded-lg text-sm px-4 py-3 mt-6 text-center font-semibold text-white ease-in-out duration-300 w-full hover:shadow-lg hover:shadow-orange-600/40">
+                    <button disabled={disable ? true : false} className="btns btn-anim bg-orange-600 hover:bg-red hover:text-black border-[1px] hover:border-orange-600 rounded-lg text-sm px-4 py-3 mt-6 text-center font-semibold text-white ease-in-out duration-300 w-full hover:shadow-lg hover:shadow-orange-600/40">
                         SUBMIT
                     </button>
                 </form>

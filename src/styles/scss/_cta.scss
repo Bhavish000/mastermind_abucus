@@ -358,6 +358,9 @@
     //     }
     // }
 }
+.img_width {
+    width: 50%;
+} 
 
 /* Lg Device :1199px. */
 @media #{$lg} {    
@@ -379,7 +382,10 @@
 }
 
 /* Tablet desktop :991px. */
-@media #{$md} {    
+@media #{$md} {   
+    .img_width {
+        width: 100%;
+    } 
     // .rs-cta.home-style14 .btn-part{
     //     text-align: center !important;
     // }
@@ -503,6 +509,9 @@
     .rs-cta .desc {
         font-size: 16px;
     }
+    .img_width {
+        width: 100%;
+    }
     
     // .rs-cta.effects-layer .effects-bg .content-part .title {
     //     font-size: 20px;
@@ -534,7 +543,10 @@
 }
 
 /* Large Mobile :575px. */
-@media #{$xs} {    
+@media #{$xs} {  
+    .img_width {
+        width: 100%;
+    }  
     // .rs-cta.home11-style .content {
     //     max-width: 390px;
     //     margin: 0 auto;
@@ -555,6 +567,9 @@
 
 /* small mobile :480px. */
 @media #{$mobile} {    
+    .img_width {
+        width: 100%;
+    }
     // .rs-cta.effects-layer .effects-bg .content-part {
     //     padding: 350px 30px 60px 40px;
     // }

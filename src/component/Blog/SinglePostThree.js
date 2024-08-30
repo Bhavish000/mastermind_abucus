@@ -10,8 +10,8 @@ const SinglePostThree = (props) => {
                     <Image
                         src={blogImage}
                         alt={blogTitle}
-                        width={500}
-                        height={300}
+                        // width={500}
+                        // height={300}
                     />
                 </Link>
             </div>

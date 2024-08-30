@@ -1,6 +1,6 @@
 import { React, useState, useMemo, useEffect } from 'react';
 import Select from 'react-select';
-import countryList from 'react-select-country-list';
+// import countryList from 'react-select-country-list';
 import ConfettiExplosion from 'react-confetti-explosion';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
@@ -18,16 +18,16 @@ const BookclassModal = ({ onClose }) => {
     const [value2, setValue2] = useState('Select a Date for Class');
     const [time, setTime] = useState([]);
     const [countryCode, setCountryCode] = useState();
-    const options = useMemo(() => countryList().getData(), []);
-    const indiaOption = options.find(option => option.value === 'IN');
-    const [value, setValue] = useState(indiaOption);
+    // const options = useMemo(() => countryList().getData(), []);
+    // const indiaOption = options.find(option => option.value === 'IN');
+    // const [value, setValue] = useState(indiaOption);
     const [value3, setvalue3] = useState('Select a Date for Class')
     const [Captcha, setCaptcha] = useState('');
     const [Captchaerror, setCaptchaerror] = useState(false)
     const [options2, setOptions2] = useState([]);
     const [PhoneNum, setPhoneNum] = useState('')
 
-    // console.log(PhoneNum)
+    // console.log(value)
 
     const route = useRouter();
     const { setData } = useInquiry();
@@ -40,7 +40,7 @@ const BookclassModal = ({ onClose }) => {
         try {
             const res = await axios.get(`https://tt.mastermindschool.co.in/api/get_cournty_ip?ip=${ip}`);
             setCountryCode(res.data.data);
-            console.log(res.data.data)
+            // console.log('data' +res.data.data)
             // fetchTime(res.data.data);
         } catch (error) {
             console.error("An error occurred while fetching data:", error);
@@ -96,7 +96,7 @@ const BookclassModal = ({ onClose }) => {
         event.preventDefault();
 
         const formData = {
-            country: value.value,
+            country: countryCode,
             studentName: event.target.name.value,
             email: event.target.email.value,
             phoneNumber: PhoneNum,
@@ -139,8 +139,13 @@ const BookclassModal = ({ onClose }) => {
 
     const handlePhoneChange = (value) => {
         const format = formatPhoneNumber(value)
+        console.log(format)
         setPhoneNum(format)
         setCountryCodevalue(value)
+    };
+    const handleCountryChange = (value) => {
+        setCountryCode(value)
+        // console.log(value) 
     };
 
 
@@ -216,6 +221,7 @@ const BookclassModal = ({ onClose }) => {
                             defaultCountry={countryCode ? countryCode : null}
                             onChange={handlePhoneChange}
                             // international
+                            onCountryChange={handleCountryChange}
                             required
                         />
                     </div>

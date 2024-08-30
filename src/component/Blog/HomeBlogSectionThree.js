@@ -77,7 +77,7 @@ function BlogPartThree () {
         };
 
         Handle_blog_api();
-    }, [BlogData]);
+    }, []);
 
 
 

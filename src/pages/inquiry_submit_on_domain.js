@@ -3,6 +3,7 @@ import { useInquiry } from '@/context/inquiryContext';
 import Franchise_Header from '@/sectionPage/franchisee_inquiry_form/Franchise_Header';
 import Successfully from '@/sectionPage/Student Landing page/Submitted_Successfully_Page/SubmittedSuccessfully';
 import Head from 'next/head';
+import Script from 'next/script';
 import React, { useEffect } from 'react';
 
 const Submitted = () => {
@@ -68,16 +69,6 @@ const Submitted = () => {
           `}
                 </Script>
             </Head>
-            <body>
-                <noscript>
-                    <iframe
-                        src="https://www.googletagmanager.com/ns.html?id=GTM-MKS6BGK"
-                        height="0"
-                        width="0"
-                        style={{ display: "none", visibility: "hidden" }}
-                    ></iframe>
-                </noscript>
-            </body>
 
 
             {/* <Franchise_Header

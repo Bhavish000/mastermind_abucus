@@ -10,6 +10,16 @@ const Successfully = ({click}) => {
         <React.Fragment>
             {/* <!-- banner section start --> */}
             <div id="rs-banner" className="rs-banner submit ">
+            <body>
+                <noscript>
+                    <iframe
+                        src="https://www.googletagmanager.com/ns.html?id=GTM-MKS6BGK"
+                        height="0"
+                        width="0"
+                        style={{ display: "none", visibility: "hidden" }}
+                    ></iframe>
+                </noscript>
+            </body>
                 <div className="container relative" >
                     <div className=" text-cneter relative">
                         <div className="row">

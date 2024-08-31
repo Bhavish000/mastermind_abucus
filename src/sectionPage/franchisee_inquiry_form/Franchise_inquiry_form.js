@@ -18,7 +18,8 @@ const Franchise_inquiry_form = (props) => {
     const [state_list, setstate_list] = useState();
     const [selectedCountry, setSelectedCountry] = useState('');
     const [defaultVal, setdefaultVal] = useState('')
-    const [disable, setdisable] = useState(false)
+    const [disable, setdisable] = useState(false);
+    const [isLoading, setisLoading] = useState(false);
 
     // const location = useLocation();
     // const { state } = location;
@@ -104,6 +105,7 @@ const Franchise_inquiry_form = (props) => {
     };
 
     const handleSubmit = async (event) => {
+        setisLoading(true)
         event.preventDefault();
         const formData = {
             countryid: value,
@@ -125,17 +127,21 @@ const Franchise_inquiry_form = (props) => {
                     burst();
                     window.location.replace('/inquiry_submit_on_franchise_offline');
                     setdisable(false) 
+                    setisLoading(false)
                 } else {
                     console.error('Error:', response.statusText);
                 }
             } catch (error) {
                 console.error('Error:', error);
                 setdisable(false)
+                setisLoading(false)
             }finally{
                 setdisable(false)
+                setisLoading(false)
             }
         } else {
             setCaptchaerror(true);
+            setisLoading(false)
         }
     };
     //  console.log('hhhh' + typeof(defaultVal))
@@ -180,7 +186,7 @@ const Franchise_inquiry_form = (props) => {
                     {Captchaerror ? <span style={{ color: 'red' }}>Please Select Captcha</span> : null}
                     <span className="text-sm text-gray-500 pt-1">By registering here, I agree to Mastermind Abacus <a className='text-blue-600' href='https://www.mastermindabacus.com/terms?_gl=1*y57x04*_up*MQ..'>Terms & Conditions</a> and <a className='text-blue-600 ' href='https://www.mastermindabacus.com/privacy-policy?_gl=1*16oj2r1*_up*MQ..'>Privacy Policy</a></span>
                     <button disabled={disable ? true : false} className="btns btn-anim bg-orange-600 hover:bg-red hover:text-black border-[1px] hover:border-orange-600 rounded-lg text-sm px-4 py-3 mt-6 text-center font-semibold text-white ease-in-out duration-300 w-full hover:shadow-lg hover:shadow-orange-600/40">
-                        SUBMIT
+                       {isLoading ? 'Please wait...' : 'SUBMIT'} 
                     </button>
                 </form>
             </div>

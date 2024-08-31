@@ -57,8 +57,6 @@ export default function Document() {
         <Main />
         <NextScript />
 
-
-
         <Script id="botsonic-loader" strategy="afterInteractive">
           {`
           function loadBotsonic() {

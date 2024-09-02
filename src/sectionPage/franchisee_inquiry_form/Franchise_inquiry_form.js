@@ -175,7 +175,7 @@ const Franchise_inquiry_form = (props) => {
                     <input className="w-full py-2 " placeholder="Enter Your City" name="city" type="text" required />
                     <div className="col-md-12 col-sm-12 mt-2">
                         <div className="form-group">
-                            <textarea cols="5" rows="1" placeholder='Your Remarks/Comments' name='remark' className="textarea form-control" required></textarea>
+                            <textarea cols="5" rows="1" placeholder='Your Remarks/Comments' name='remark' className="textarea form-control" ></textarea>
                         </div>
                     </div>
 

@@ -4,7 +4,17 @@ import FrnachiseMain from '@/sectionPage/Franchise/FeanchiseMain';
 import Head from 'next/head';
 import React from 'react';
 
-const Franchise = () => {
+export const getServerSideProps = async (context) => {
+    const referrer = context.req.headers.referer || '';
+    
+    return {
+      props: {
+        referrer,
+      },
+    };
+  };
+const Franchise = ({referrer}) => {
+    console.log('Referrer:', referrer);
     return (
         <React.Fragment>
             <Head>

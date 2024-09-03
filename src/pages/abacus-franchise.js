@@ -4,15 +4,15 @@ import FrnachiseMain from '@/sectionPage/Franchise/FeanchiseMain';
 import Head from 'next/head';
 import React from 'react';
 
-// export const getServerSideProps = async (context) => {
-//     const referrer = context.req.headers.referer || '';
+export const getServerSideProps = async (context) => {
+    const referrer = context.req.headers.referer || '';
     
-//     return {
-//       props: {
-//         referrer,
-//       },
-//     };
-//   };
+    return {
+      props: {
+        referrer,
+      },
+    };
+  };
 const Franchise = ({referrer}) => {
     console.log('Referrer:', referrer);
     return (

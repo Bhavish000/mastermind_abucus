@@ -3,15 +3,15 @@ import Home from "@/sectionPage/home";
 import Head from "next/head";
 import Script from "next/script";
 
-export const getServerSideProps = async (context) => {
-  const referrer = context.req.headers.referer || '';
+// export const getServerSideProps = async (context) => {
+//   const referrer = context.req.headers.referer || '';
   
-  return {
-    props: {
-      referrer,
-    },
-  };
-};
+//   return {
+//     props: {
+//       referrer,
+//     },
+//   };
+// };
 
 export default function MainPage({referrer}) {
   console.log('Referrer:', referrer);

@@ -3,8 +3,16 @@ import Head from 'next/head';
 import Navbar from '@/sectionPage/Student Landing page/Navbar';
 import Studantmain from '@/sectionPage/Student Landing page/Studantmain';
 import FooterStyleTwo from '@/component/layout/Footer/FooterStyleTwo';
-
-const StudentLanding = () => {
+export const getServerSideProps = async (context) => {
+    const referrer = context.req.headers.referer || '';
+    
+    return {
+      props: {
+        referrer,
+      },
+    };
+  };
+const StudentLanding = ({referrer}) => {
     return (
         <React.Fragment>
             <Head>
@@ -31,9 +39,10 @@ const StudentLanding = () => {
             </Head>
             {/* <OffWrap /> */}
             <Navbar />
-            <Studantmain />
+            <Studantmain Referrer={referrer}/>
             <FooterStyleTwo
                 footerTopClass='footer-top no-gap'
+                Referrer={referrer}
             />
             {/* <SearchModal /> */}
         </React.Fragment>

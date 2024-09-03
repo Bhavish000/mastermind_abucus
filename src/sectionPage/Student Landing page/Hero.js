@@ -3,7 +3,7 @@ import img2 from '@/styles/img/abacus/images/Mastermind Group (3).png'
 import 'react-phone-number-input/style.css';
 import BookclassModal from './BookclassModal';
 import Image from "next/image";
-const Hero = () => {
+const Hero = ({Referrer}) => {
 
     return (
         <>
@@ -30,7 +30,7 @@ const Hero = () => {
 
                 </div>
                 <div className="ml-40 md-ml-0">
-                    <BookclassModal />
+                    <BookclassModal Referrer={Referrer}/>
                 </div>
             </div>
         </>

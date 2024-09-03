@@ -21,17 +21,17 @@ import ChatBox from '@/component/Common/ScrollTop/ChatBox'
 // import ScrollToTop from '@/component/ScrollTop'
 // import ChatBox from '@/component/ScrollTop/ChatBox'
 
-function MainHome() {
+function MainHome({Referrer}) {
   return (
     <div>
-      <HomeBanner/>
+      <HomeBanner Referrer={Referrer}/>
       <RredLineSection/>
       <About/>
       <AboutSection02/>
       <Courses/>
       <Service/>
       <BenefiteSection/>
-      <OnlineClassSection/>
+      <OnlineClassSection Referrer={Referrer}/>
       <PracticeSection/>
       <GallerySection/>
       <Testimonial/>
@@ -40,7 +40,7 @@ function MainHome() {
       <MapSection/>
       <NewsletterThree/>
       <ChatBox/>
-      <ScrollToTop/>
+      <ScrollToTop Referrer={Referrer}/>
     </div>
   )
 }

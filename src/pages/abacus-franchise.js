@@ -4,17 +4,7 @@ import FrnachiseMain from '@/sectionPage/Franchise/FeanchiseMain';
 import Head from 'next/head';
 import React from 'react';
 
-export const getServerSideProps = async (context) => {
-    const referrer = context.req.headers.referer || '';
-    
-    return {
-      props: {
-        referrer,
-      },
-    };
-  };
-const Franchise = ({referrer}) => {
-    console.log('Referrer:', referrer);
+const Franchise = () => {
     return (
         <React.Fragment>
             <Head>
@@ -43,10 +33,6 @@ const Franchise = ({referrer}) => {
             <HeaderStyleFour
             parentMenu='home'
             TopBar='enable'
-            // headerNormalLogo={Logo}
-            // headerStickyLogo={stickyLogo}
-            // CanvasLogo={Logo}
-            // CanvasClass='right_menu_togle hidden-md'
             headerClass='full-width-header header-style2'
             TopBarClass='topbar-area dark-parimary-bg'
             emailAddress='support@website.com'

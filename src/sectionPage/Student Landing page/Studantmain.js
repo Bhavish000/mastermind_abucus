@@ -6,11 +6,11 @@ import Slider from './Slider'
 import FAQ from './Faq'
 import ScrollToTop from '@/component/Common/ScrollTop'
 
-const Studantmain = () => {
+const Studantmain = ({Referrer}) => {
   return (
     <React.Fragment>
         {/* hero section */}
-        <Hero/>
+        <Hero Referrer={Referrer}/>
         {/* video section */}
         <Video/>
         {/* why smart section */}
@@ -20,7 +20,7 @@ const Studantmain = () => {
         {/* FAQ section */}
         <FAQ/>
 
-        <ScrollToTop status={'bookclass'} />
+        <ScrollToTop status={'bookclass'}  Referrer={Referrer}/>
     </React.Fragment>
   )
 }

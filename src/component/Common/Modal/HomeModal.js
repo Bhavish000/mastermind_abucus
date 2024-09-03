@@ -9,7 +9,8 @@ import Teacher_inquiry_form from '@/sectionPage/Teachers/Teacher_inquiry_form';
 // import Franchise_inquiry_form from '../../../pages/franchisee_inquiry_form/Franchise_inquiry_form';
 // import Teacher_inquiry_form from '../../../pages/Teachers/Teacher_inquiry_form';
 
-export const HomeModal = ({ isOpen, onClose, status, mess, Id }) => {
+export const HomeModal = ({ isOpen, onClose, status, mess, Id ,Referrer}) => {
+
     if (!isOpen) return null;
 
     const renderContent = () => {
@@ -17,13 +18,13 @@ export const HomeModal = ({ isOpen, onClose, status, mess, Id }) => {
             case 'offline':
                 return <Student_Inquiry_form onClose={onClose}/>;
             case 'bookclass':
-                return <BookclassModal onClose={onClose} />;
+                return <BookclassModal onClose={onClose} Referrer={Referrer}/>;
             case 'FRANCHISE':
-                return <Franchise_inquiry_form message={mess} id={Id} onClose={onClose}/>
+                return <Franchise_inquiry_form message={mess} id={Id} onClose={onClose} />
             case 'TeacherIn':
                     return <Teacher_inquiry_form onClose={onClose}/>    
             default:
-                return <BookclassModal onClose={onClose} />;
+                return <BookclassModal onClose={onClose}  Referrer={Referrer}/>;
         }
     };
 
@@ -36,7 +37,6 @@ export const HomeModal = ({ isOpen, onClose, status, mess, Id }) => {
                 aria-labelledby="example-custom-modal-styling-title"
             >
                 {renderContent()}
-                {/* <BookclassModal onClose={onClose}/> */}
             </Modal>
         </div>
     );

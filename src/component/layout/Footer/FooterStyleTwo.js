@@ -5,7 +5,7 @@ import Script from 'next/script';
 import React, { useEffect, useState } from 'react';
 
 const FooterStyleTwo = (props) => {
-    const { footerClass, footerTopClass, footerLogo, footerBG, footerColor } = props;
+    const { footerClass, footerTopClass, footerLogo, footerBG, footerColor,Referrer } = props;
     const [showLikeBox, setShowLikeBox] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [status, setstatus] = useState('');
@@ -192,7 +192,7 @@ const FooterStyleTwo = (props) => {
                         </div>
                     </div>
                 </div>
-                <HomeModal isOpen={isModalOpen} onClose={closeModal} status={status} />
+                <HomeModal isOpen={isModalOpen} onClose={closeModal} status={status} Referrer={Referrer} />
             </footer>
             {/* <footer id="rs-footer" className={footerClass ? footerClass : 'rs-footer'}>
                 <div className={footerTopClass ? footerTopClass : "footer-top"}>

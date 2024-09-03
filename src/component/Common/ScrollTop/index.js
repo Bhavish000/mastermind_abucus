@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { HomeModal } from "../Modal/HomeModal";
 
 const ScrollToTop = (props) => {
-	const { status,name,message,id} = props;
+	const { status,name,message,id,Referrer} = props;
 
 	const [isVisible, setIsVisible] = useState(false);
 
@@ -39,7 +39,7 @@ const ScrollToTop = (props) => {
 					<button onClick={openModal} className="readon2 scrollbtn" style={{ backgroundColor: "#F58634" }}>{name ? name : 'Book A Free Demo Class'}</button>
 				</div>
 			)}
-			<HomeModal isOpen={isModalOpen} onClose={closeModal} status={status} mess={message} Id={id}/>
+			<HomeModal isOpen={isModalOpen} onClose={closeModal} status={status} mess={message} Id={id} Referrer={Referrer}/>
 		</div>
 	);
 }

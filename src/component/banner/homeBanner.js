@@ -4,9 +4,7 @@ import bannerImg from '@/styles/img/abacus/home_banner.53abba9b.9753e9f0-min.png
 import { HomeModal } from '../Common/Modal/HomeModal';
 // import { HomeModal } from '../Common/Modal/HomeModal';
 
-function HomeBanner() {
-
-    
+function HomeBanner({Referrer}) {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const openModal = () => {
@@ -48,7 +46,7 @@ function HomeBanner() {
 
 
                 </div>
-                <HomeModal isOpen={isModalOpen} onClose={closeModal} />
+                <HomeModal isOpen={isModalOpen} onClose={closeModal} Referrer={Referrer}/>
 
             </div>
     </div>

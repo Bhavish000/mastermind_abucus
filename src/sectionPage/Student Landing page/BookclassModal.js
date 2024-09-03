@@ -11,7 +11,8 @@ import { formatPhoneNumber } from 'react-phone-number-input';
 import { useRouter } from 'next/router';
 import { useInquiry } from '@/context/inquiryContext';
 // import { useInquiry } from '@/context/InquiryContext';
-const BookclassModal = ({ onClose }) => {
+const BookclassModal = ({ onClose ,Referrer}) => {
+    // console.log('Referrer qqq' + Referrer)
     const [isExploding, setIsExploding] = useState(false);
     // const [parent, setParent] = useState();
     const [countryCodevalue, setCountryCodevalue] = useState();
@@ -107,7 +108,7 @@ const BookclassModal = ({ onClose }) => {
         // console.log(formData)
         if (Captcha) {
             try {
-                const response = await axios.get(`https://tt.mastermindschool.co.in/api/post_inquiry_data?country=${formData.country}&name=${formData.studentName}&email_id=${formData.email}&mobile_no=${formData.phoneNumber}&city=${formData.city}&gaurdian_name=${formData.parentName}&demo_date=${formData.classDate}`);
+                const response = await axios.get(`https://tt.mastermindschool.co.in/api/post_inquiry_data?country=${formData.country}&name=${formData.studentName}&email_id=${formData.email}&mobile_no=${formData.phoneNumber}&city=${formData.city}&gaurdian_name=${formData.parentName}&demo_date=${formData.classDate}&referer=${Referrer}`);
                 // const result = await response.json();
                 const result = response.data
                 if (result.status === true) {

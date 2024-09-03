@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 
-const OnlineClassSection = () => {
+const OnlineClassSection = ({Referrer}) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
      const [ButtonStatus, setButtonStatus] = useState('')
 	const openModal = () => {
@@ -57,7 +57,7 @@ const OnlineClassSection = () => {
                     </div>
                 </div>
             </div>
-            <HomeModal isOpen={isModalOpen} onClose={openModal} status={ButtonStatus}/>
+            <HomeModal isOpen={isModalOpen} onClose={openModal} status={ButtonStatus} Referrer={Referrer}/>
         </div>
     );
 }

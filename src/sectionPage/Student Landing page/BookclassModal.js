@@ -16,7 +16,7 @@ const BookclassModal = ({ onClose ,Referrer}) => {
     const [isExploding, setIsExploding] = useState(false);
     // const [parent, setParent] = useState();
     const [countryCodevalue, setCountryCodevalue] = useState();
-    const [value2, setValue2] = useState('Select a Date for Class');
+    const [value2, setValue2] = useState({value: '7', label: '7 to 12 Years old'});
     const [time, setTime] = useState([]);
     const [countryCode, setCountryCode] = useState();
     // const options = useMemo(() => countryList().getData(), []);
@@ -28,7 +28,7 @@ const BookclassModal = ({ onClose ,Referrer}) => {
     const [options2, setOptions2] = useState([]);
     const [PhoneNum, setPhoneNum] = useState('')
 
-    // console.log(value)
+    console.log(value2)
 
     const route = useRouter();
     const { setData } = useInquiry();
@@ -134,7 +134,7 @@ const BookclassModal = ({ onClose ,Referrer}) => {
     // }));
 
     const parentOptions = [
-        { value: '4', label: "4 to 6 Years old" },
+        // { value: '4', label: "4 to 6 Years old" },
         { value: '7', label: "7 to 12 Years old" }
     ];
 
@@ -188,6 +188,7 @@ const BookclassModal = ({ onClose ,Referrer}) => {
 
     useEffect(() => {
         getIP();
+        fetchTime(value2.value)
     }, []);
     return (
         <>
@@ -228,7 +229,7 @@ const BookclassModal = ({ onClose ,Referrer}) => {
                     </div>
                     <input className="w-100 inputCss  mt-2 py-2 " placeholder="Enter Your City" name="city" type="text" required />
 
-                    <Select className='  mt-2' options={parentOptions} value={value2} placeholder="Select Student Age" onChange={changeHandler2} required />
+                    <Select className='  mt-2' options={parentOptions} isDisabled={true} value={value2} placeholder="Select Student Age" onChange={changeHandler2} required />
                     {/* <Select className='w-full' options={classOptions} value={value3} placeholder="Select a Date for Class" onChange={changeHandler3} required /> */}
                     <Select
                         // className="form-control customDropdown"

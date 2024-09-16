@@ -8,9 +8,9 @@ const AboutFanrchise = () => {
             <div className="cta-content text-center">
 
                 <div className="sec-title md-mb-10">
-                    <h1 className="title family">
+                    <div className="title family">
                         The education sector is booming. <span className="title-change" > Create your success story with Mastermind Abacus,</span> the perfect blend of time, respect, money, and satisfaction.
-                    </h1>
+                    </div>
 
                 </div>
             </div>

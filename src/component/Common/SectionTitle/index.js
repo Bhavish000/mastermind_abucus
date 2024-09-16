@@ -10,7 +10,8 @@ const SectionTitle = (props) => {
     return (
         <div className={props.sectionClass} data-aos={animateName ? animateName : ''} data-aos-delay={animateDelay ? animateDelay : ''} data-aos-duration={animateDuration ? animateDuration : ''}>
             {subtitleClass ? <div className={props.subtitleClass}>{props.subtitle}</div> : ''}
-            {titleClass ? <h1 className={props.titleClass}>{props.title}</h1> : ''}
+            {props.showH1 ? <>{titleClass ? <h1 className={props.titleClass}>{props.title}</h1> : ''}</> :<>{titleClass ? <h2 className={props.titleClass}>{props.title}</h2> : ''}</>}
+            
             {bottomSubTitleClass ? <div className={props.bottomSubTitleClass}>{props.bottomSubTitle}</div> : ''}
             {descClass ? <div className={props.descClass}>{props.description}</div> : ''}
             {secondDescClass ? <div className={props.secondDescClass}>{props.secondDescription}</div> : ''}

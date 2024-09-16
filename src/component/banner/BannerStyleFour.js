@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { HomeModal } from '../Common/Modal/HomeModal';
-
+// import videoff from '../../styles/img/abacus/Franchise'
 const BannerStyleFour = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 

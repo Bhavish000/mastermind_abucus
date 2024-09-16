@@ -26,6 +26,7 @@ const FranchiseVideo = () => {
                                 sectionClass="sec-title3 mb-40 ml-50 md-ml-0 md-mb-0 md-text-center"
                                 titleClass="title  white-color "
                                 title="JOIN THE LEADING ABACUS FRANCHISE PROGRAM."
+                                showH1= '1'
                             />
 
                         </div>

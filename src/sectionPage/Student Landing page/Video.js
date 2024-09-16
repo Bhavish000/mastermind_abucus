@@ -31,7 +31,7 @@ const Video = () => {
           videoId='JwjiqMPtz-E'
           onClose={toggleModal}
         />
-        <h1 className="text-lg md:text-3xl font-extrabold family text-center">  <span className="orange-color">UNLEASH MATH WHIZ WITH FUN & EFFECTIVE </span> ONLINE ABACUS CLASSES!</h1>
+        <h1 className="text-lg md:text-3xl font-extrabold family text-center">  <span className="orange-color">Transform Your Child’s Math Abilities with  </span> Our Abacus Online Classes !</h1>
         <div className="text-center text-gray-500 py-3 mb-10 md:w-3/4 text-base" >Watch this video and discover how our <span className="font-bold">Abacus online classes</span> work using the ancient abacus to develop mental math skills, boost confidence, and make learning fun.</div>
 
 

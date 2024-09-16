@@ -43,8 +43,8 @@ const HeaderStyleFour = (props) => {
 									<div className="logo-cat-wrap hidden-md">
 										<div className="logo-part pr-90">
 											<Link href="/">
-												<Image className="normal-logo" src={headerNormalLogo ? abacusLogo : abacusLogo} alt="logo" />
-												<Image className="sticky-logo" src={headerStickyLogo ? abacusLogo : abacusLogo} alt="logo" />
+												<Image className="normal-logo" src={headerNormalLogo ? abacusLogo : abacusLogo} alt="master mind" />
+												<Image className="sticky-logo" src={headerStickyLogo ? abacusLogo : abacusLogo} alt="master mind" />
 											</Link>
 										</div>
 
